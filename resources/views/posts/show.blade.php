@@ -14,9 +14,10 @@
                 <div class="content">
                     <div class="content__post">
                         <h3>投稿内容</h3>
-                        <p>{{ $post->body }}</p>    
+                        <p>{{ $post->body }}</p>
                     </div>
                 </div>
+                <a href="">{{ $post->category->name }}</a>
             <div class="edit"><a href="/posts/{{ $post->id }}/edit">更新</a></div>
             <div class="footer">
             <a href="/">戻る</a>
