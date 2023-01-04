@@ -23,7 +23,7 @@
                 </div>
                 
             
-            <p><a href="">{{ $post->category->name }}</a></p>    
+            <p><a href="/categories/{{ $post->category->id }}">{{ $post->category->name }}</a></p>    
             <a href="/">戻る</a>
         </div>
     </body>
