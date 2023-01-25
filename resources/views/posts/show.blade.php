@@ -11,19 +11,9 @@
                 <h1 class="title">
                     {{ $post->title }}
                 </h1>
-                <p><div class="edit"><a href="/posts/{{ $post->id }}/edit">更新</a></div>
+                <p><div class="edit"><a href="/posts/{{ $post->id }}/edit">おしゃれ着を更新する</a></div>
                     <div class="footer">
                 </p>
-                
-                <div class="content">
-                    <div class="content__post">
-                        <h3>投稿内容</h3>
-                        <p>{{ $post->body }}</p>
-                    </div>
-                </div>
-                
-            
-            <p><a href="/categories/{{ $post->category->id }}">{{ $post->category->name }}</a></p>    
             <a href="/">戻る</a>
         </div>
     </body>
