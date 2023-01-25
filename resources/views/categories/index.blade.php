@@ -27,6 +27,15 @@
         
         </div>
         <div class='paginate'>{{ $posts->links()}}</div>
+        <div>
+            @foreach($questions as $question)
+                <div>
+                    <a href="https://teratail.com/questions/{{ $question['id'] }}">
+                        {{ $question['title'] }}
+                    </a>{ $question['title'] }}
+                </div>
+            @endforeach
+        </div>
         <script>
             function deletePost(id) {
                 'use strict'
